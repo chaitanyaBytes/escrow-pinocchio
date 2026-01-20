@@ -100,7 +100,7 @@ impl<'a> TryFrom<(&'a [u8], &'a [AccountInfo])> for Make<'a> {
             ],
             &crate::ID,
         );
-        let seed_binding = instruction_data.seed.to_be_bytes();
+        let seed_binding = instruction_data.seed.to_le_bytes();
         let bump_binding = [bump];
         let escrow_seeds = [
             Seed::from(b"escrow"),

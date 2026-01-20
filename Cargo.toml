@@ -30,4 +30,8 @@ unexpected_cfgs = { level = "warn", check-cfg = [
 [dev-dependencies]
 litesvm = "0.8.1"
 solana-sdk = "3.0.0"
+litesvm-token = "0.8.1"
 solana-system-interface = { version = "3.0.0", features = ["bincode"] }
+spl-associated-token-account = "8.0.0"
+spl-token = "9.0.0"
+spl-associated-token-account-interface = "2.0.0"
